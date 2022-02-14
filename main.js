@@ -16,7 +16,7 @@ console.log(Content);
 document.getElementById("textbox").innerHTML = Content;
 
 if (Content=="take my selfie") {
-    console.log("taking selfie");
+    console.log("taking your selfie");
     speak();
 }
 
@@ -24,7 +24,7 @@ if (Content=="take my selfie") {
 function speak(){
     var synth = window.speechSynthesis;
 
-    speak_data = document.getElementById("textbox").value;
+    speak_data = "taking your selfie in 5 seconds"
 
     var utterThis = new SpeechSynthesisUtterance(speak_data);
 
